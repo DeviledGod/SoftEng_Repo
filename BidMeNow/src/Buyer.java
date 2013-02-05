@@ -40,6 +40,7 @@ public class Buyer extends JFrame {
 	 * Create the frame.
 	 */
 	public Buyer() {
+		setResizable(false);
 		setTitle("Main");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1000, 744);
@@ -51,14 +52,14 @@ public class Buyer extends JFrame {
 		
 		JLabel labelLogo = new JLabel("");
 		labelLogo.setLabelFor(labelLogo);
-		labelLogo.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\Logo1.png"));
+		labelLogo.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\Logo1.png"));
 		labelLogo.setBounds(288, 0, 428, 207);
 		contentPane.add(labelLogo);
 		
 		JLabel labelSearch = new JLabel("");
 		labelSearch.setLabelFor(labelSearch);
 		labelSearch.setHorizontalAlignment(SwingConstants.CENTER);
-		labelSearch.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\Search.jpg"));
+		labelSearch.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\Search.jpg"));
 		labelSearch.setBounds(145, 198, 119, 81);
 		contentPane.add(labelSearch);
 		
@@ -144,41 +145,41 @@ public class Buyer extends JFrame {
 		contentPane.add(lblDeleted);
 		
 		JLabel labelPayPal = new JLabel("");
-		labelPayPal.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\paypal.jpg"));
+		labelPayPal.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\paypal.jpg"));
 		labelPayPal.setBounds(762, 255, 194, 207);
 		contentPane.add(labelPayPal);
 		
-		JLabel lblBillMeLater = new JLabel("UPS");
-		lblBillMeLater.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\billmelater.jpeg"));
+		JLabel lblBillMeLater = new JLabel("");
+		lblBillMeLater.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\billmelater.jpeg"));
 		lblBillMeLater.setBounds(762, 471, 194, 114);
 		contentPane.add(lblBillMeLater);
 		
 		JLabel lblDhl = new JLabel("");
 		lblDhl.setHorizontalAlignment(SwingConstants.CENTER);
-		lblDhl.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\b1_dhl.jpg"));
+		lblDhl.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\b1_dhl.jpg"));
 		lblDhl.setBounds(170, 578, 114, 89);
 		contentPane.add(lblDhl);
 		
 		JLabel lblUps = new JLabel("");
 		lblUps.setHorizontalAlignment(SwingConstants.CENTER);
-		lblUps.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\ups.jpg"));
+		lblUps.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\ups.jpg"));
 		lblUps.setBounds(299, 578, 128, 101);
 		contentPane.add(lblUps);
 		
 		JLabel lblFedex = new JLabel("");
 		lblFedex.setHorizontalAlignment(SwingConstants.CENTER);
-		lblFedex.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\FedEx-Express.png"));
+		lblFedex.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\FedEx-Express.png"));
 		lblFedex.setBounds(437, 579, 160, 89);
 		contentPane.add(lblFedex);
 		
 		JLabel lblWesternunion = new JLabel("");
-		lblWesternunion.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\Western_Union_Moving_Money-paymentobserver.jpg"));
+		lblWesternunion.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\Western_Union_Moving_Money-paymentobserver.jpg"));
 		lblWesternunion.setHorizontalAlignment(SwingConstants.CENTER);
 		lblWesternunion.setBounds(762, 596, 194, 90);
 		contentPane.add(lblWesternunion);
 		
 		JLabel lblMoneygram = new JLabel("");
-		lblMoneygram.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\moneygram.png"));
+		lblMoneygram.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\moneygram.png"));
 		lblMoneygram.setHorizontalAlignment(SwingConstants.CENTER);
 		lblMoneygram.setBounds(592, 596, 160, 71);
 		contentPane.add(lblMoneygram);

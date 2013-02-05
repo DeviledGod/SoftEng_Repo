@@ -49,6 +49,7 @@ public class Bid extends JFrame {
 	 * Create the frame.
 	 */
 	public Bid() {
+		setResizable(false);
 		setTitle("Bid");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 791, 611);
@@ -59,7 +60,7 @@ public class Bid extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblLogo = new JLabel("");
-		lblLogo.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\Logo1.png"));
+		lblLogo.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\Logo1.png"));
 		lblLogo.setHorizontalAlignment(SwingConstants.CENTER);
 		lblLogo.setBounds(190, 0, 422, 207);
 		contentPane.add(lblLogo);

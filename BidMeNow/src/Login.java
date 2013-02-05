@@ -40,6 +40,7 @@ public class Login extends JFrame {
 	 * Create the frame.
 	 */
 	public Login() {
+		setEnabled(false);
 		setTitle("Login");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 575, 456);
@@ -91,7 +92,7 @@ public class Login extends JFrame {
 		contentPane.add(lblTo);
 		
 		JLabel labelIcon = new JLabel("");
-		labelIcon.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\Logo1.png"));
+		labelIcon.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\Logo1.png"));
 		labelIcon.setBounds(93, 0, 414, 194);
 		contentPane.add(labelIcon);
 		

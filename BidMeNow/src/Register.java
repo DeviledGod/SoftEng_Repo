@@ -43,6 +43,7 @@ public class Register extends JFrame {
 	 * Create the frame.
 	 */
 	public Register() {
+		setResizable(false);
 		setTitle("Register");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 662, 519);
@@ -63,7 +64,7 @@ public class Register extends JFrame {
 		contentPane.add(lblWith);
 		
 		JLabel labelLogo = new JLabel("");
-		labelLogo.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\Workspace\\BidMeNow\\Logo1.png"));
+		labelLogo.setIcon(new ImageIcon("C:\\Users\\DeviledGod\\E. C. S\\Semester 7\\Software Engineering\\Laboratory\\GitHub\\GitHub Repo\\BidMeNow\\Logo1.png"));
 		labelLogo.setBounds(116, 0, 418, 214);
 		contentPane.add(labelLogo);
 		
