@@ -1,3 +1,4 @@
+package org.teipir.softeng.junit;
 
 public class Main {
 
