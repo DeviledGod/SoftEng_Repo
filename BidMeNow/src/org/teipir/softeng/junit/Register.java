@@ -141,7 +141,7 @@ public class Register extends JFrame {
 		btnRegister.setBounds(452, 374, 157, 44);
 		contentPane.add(btnRegister);
 		
-		JButton btnClear = new JButton("C\r\nl\r\ne\r\na\r\nr");
+		JButton btnClear = new JButton("Clear");
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}

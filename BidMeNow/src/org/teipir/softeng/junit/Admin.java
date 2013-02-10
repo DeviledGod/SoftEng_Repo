@@ -160,31 +160,37 @@ public class Admin extends JFrame {
 		contentPane.add(lblPerRaise);
 		
 		textFieldSD = new JTextField();
+		textFieldSD.setEditable(false);
 		textFieldSD.setBounds(504, 436, 27, 20);
 		contentPane.add(textFieldSD);
 		textFieldSD.setColumns(1);
 		
 		textFieldSM = new JTextField();
+		textFieldSM.setEditable(false);
 		textFieldSM.setBounds(541, 436, 30, 20);
 		contentPane.add(textFieldSM);
 		textFieldSM.setColumns(1);
 		
 		textFieldSY = new JTextField();
+		textFieldSY.setEditable(false);
 		textFieldSY.setBounds(581, 436, 46, 20);
 		contentPane.add(textFieldSY);
 		textFieldSY.setColumns(1);
 		
 		textFieldDD = new JTextField();
+		textFieldDD.setEditable(false);
 		textFieldDD.setBounds(504, 464, 27, 20);
 		contentPane.add(textFieldDD);
 		textFieldDD.setColumns(1);
 		
 		textFieldDM = new JTextField();
+		textFieldDM.setEditable(false);
 		textFieldDM.setBounds(541, 464, 30, 20);
 		contentPane.add(textFieldDM);
 		textFieldDM.setColumns(1);
 		
 		textFieldDY = new JTextField();
+		textFieldDY.setEditable(false);
 		textFieldDY.setBounds(581, 464, 46, 20);
 		contentPane.add(textFieldDY);
 		textFieldDY.setColumns(1);
