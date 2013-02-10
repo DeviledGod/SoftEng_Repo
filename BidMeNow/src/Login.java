@@ -12,13 +12,18 @@ import javax.swing.ImageIcon;
 import java.awt.Color;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JPasswordField;
 
 
 public class Login extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textFieldUsername;
-	private JTextField textFieldPassword;
+	private JPasswordField passwordField;
 
 	/**
 	 * Launch the application.
@@ -40,7 +45,8 @@ public class Login extends JFrame {
 	 * Create the frame.
 	 */
 	public Login() {
-		setEnabled(false);
+		setResizable(false);
+		setEnabled(true);
 		setTitle("Login");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 575, 456);
@@ -70,11 +76,6 @@ public class Login extends JFrame {
 		contentPane.add(textFieldUsername);
 		textFieldUsername.setColumns(1);
 		
-		textFieldPassword = new JTextField();
-		textFieldPassword.setBounds(205, 279, 123, 20);
-		contentPane.add(textFieldPassword);
-		textFieldPassword.setColumns(1);
-		
 		JLabel lblRegister = new JLabel("Not a member yet? Click here to register!");
 		lblRegister.setHorizontalAlignment(SwingConstants.CENTER);
 		lblRegister.setFont(new Font("Tahoma", Font.PLAIN, 16));
@@ -103,9 +104,25 @@ public class Login extends JFrame {
 		contentPane.add(btnLogin);
 		
 		JButton btnClear = new JButton("Clear");
+		btnClear.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) 
+			{
+				textFieldUsername.setText("");
+				passwordField.setText("");
+			}
+		});
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnClear.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnClear.setForeground(new Color(204, 102, 0));
 		btnClear.setBounds(365, 279, 102, 23);
 		contentPane.add(btnClear);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(205, 279, 123, 20);
+		contentPane.add(passwordField);
 	}
 }

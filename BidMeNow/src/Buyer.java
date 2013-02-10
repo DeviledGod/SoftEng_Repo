@@ -13,6 +13,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Component;
 import javax.swing.Box;
+import javax.swing.JComboBox;
 
 
 public class Buyer extends JFrame {
@@ -68,10 +69,10 @@ public class Buyer extends JFrame {
 		contentPane.add(textFieldSearch);
 		textFieldSearch.setColumns(10);
 		
-		JButton buttonSearch = new JButton(" Go!");
+		JButton buttonSearch = new JButton(" Go for it..!");
 		buttonSearch.setForeground(new Color(153, 51, 102));
 		buttonSearch.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		buttonSearch.setBounds(778, 200, 119, 52);
+		buttonSearch.setBounds(762, 210, 194, 39);
 		contentPane.add(buttonSearch);
 		
 		JLabel lblMyAccount = new JLabel("My Account");

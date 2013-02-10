@@ -11,6 +11,13 @@ import java.awt.Color;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
+import javax.swing.JPasswordField;
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 public class Register extends JFrame {
@@ -19,9 +26,9 @@ public class Register extends JFrame {
 	private JTextField textFieldFirstName;
 	private JTextField textFieldLastName;
 	private JTextField textFieldEmail;
-	private JTextField textFieldConfPass;
-	private JTextField textFieldPassword;
 	private JTextField textFieldUsername;
+	private JPasswordField passwordField_Pass;
+	private JPasswordField passwordField_ConfPass;
 
 	/**
 	 * Launch the application.
@@ -121,16 +128,6 @@ public class Register extends JFrame {
 		lblConfirmPassword.setBounds(318, 330, 115, 20);
 		contentPane.add(lblConfirmPassword);
 		
-		textFieldConfPass = new JTextField();
-		textFieldConfPass.setBounds(452, 329, 157, 20);
-		contentPane.add(textFieldConfPass);
-		textFieldConfPass.setColumns(1);
-		
-		textFieldPassword = new JTextField();
-		textFieldPassword.setBounds(452, 292, 157, 20);
-		contentPane.add(textFieldPassword);
-		textFieldPassword.setColumns(1);
-		
 		textFieldUsername = new JTextField();
 		textFieldUsername.setBounds(452, 256, 157, 21);
 		contentPane.add(textFieldUsername);
@@ -143,6 +140,29 @@ public class Register extends JFrame {
 		contentPane.add(btnRegister);
 		
 		JButton btnClear = new JButton("C\r\nl\r\ne\r\na\r\nr");
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnClear.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				
+				textFieldFirstName.setText("");
+				textFieldLastName.setText("");
+				textFieldEmail.setText("");
+				textFieldUsername.setText("");
+				textFieldLastName.setText("");
+				passwordField_Pass.setText("");
+				passwordField_ConfPass.setText("");
+
+			}
+		});
+		btnClear.addPropertyChangeListener(new PropertyChangeListener() {
+			public void propertyChange(PropertyChangeEvent arg0) {
+				
+			}
+		});
 		btnClear.setForeground(new Color(204, 102, 0));
 		btnClear.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnClear.setBounds(452, 429, 157, 26);
@@ -153,6 +173,14 @@ public class Register extends JFrame {
 		lblLoginback.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblLoginback.setBounds(38, 400, 303, 37);
 		contentPane.add(lblLoginback);
+		
+		passwordField_Pass = new JPasswordField();
+		passwordField_Pass.setBounds(452, 295, 157, 20);
+		contentPane.add(passwordField_Pass);
+		
+		passwordField_ConfPass = new JPasswordField();
+		passwordField_ConfPass.setBounds(452, 329, 157, 20);
+		contentPane.add(passwordField_ConfPass);
 	}
 
 }
